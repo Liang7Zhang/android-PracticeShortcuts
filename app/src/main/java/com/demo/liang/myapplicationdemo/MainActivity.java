@@ -29,11 +29,15 @@ public class MainActivity extends Activity {
         try {
             getInfo("none");
         } catch (UnsatisfiedLinkError e) {
-
+            Log.e(TAG, "Detect unsatisfied link error");
+            Log.e(TAG, "In other words, the UnsatisfiedLinkError was caught");
         }
 
         // Practice show usage shortcuts, [Option] + [Command] + [F7]
         getInfo("none again");
+
+        // Practice upload new commit to Github
+        getInfo("this should be caught and recorded in new commit");
     }
 
 
